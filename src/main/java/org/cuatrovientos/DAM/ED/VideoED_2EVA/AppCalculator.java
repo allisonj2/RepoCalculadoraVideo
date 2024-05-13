@@ -19,7 +19,7 @@ import java.util.Scanner;
 		System.out.print("Introduce el primer número: ");
 		double num1 = input.nextDouble(); 
 
-		System.out.print("Introduce la operacion que deseas realizar (+, -, *, /): ");
+		System.out.print("Introduce la operacion que deseas realizar (+, -, *, /, ^): ");
 		char operator = input.next().charAt(0);
 
 		System.out.print("Introduce el segundo número: ");
@@ -41,6 +41,8 @@ import java.util.Scanner;
 			break;
 		case '/':
 			result = calculator.divide(num1, num2);
+		case '^':
+			result = calculator.potencia(num1, num2);
 			break;
 		default:
 			result = Double.NaN; // Indicate invalid operator.
