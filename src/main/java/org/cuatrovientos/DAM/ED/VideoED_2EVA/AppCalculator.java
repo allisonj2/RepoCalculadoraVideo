@@ -42,7 +42,7 @@ import java.util.Scanner;
 		case '/':
 			result = calculator.divide(num1, num2);
 		case '^':
-			result = calculator.potencia(num1, num2);
+			result = calculator.potencia(num1, num2)
 			break;
 		default:
 			result = Double.NaN; // Indicate invalid operator.
